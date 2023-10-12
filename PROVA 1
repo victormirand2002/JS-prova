@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1 = Number(8)
+        let n2 = Number(6)
+        let n3 = Number(9)
+
+        let p1 = Number(1)
+        let p2 = Number(3)
+        let p3 = Number(2)
+
+        let media = (n1*p1 + n2*p2 + n3*p3)/(p1+p2+p3)
+
+        console.log(`A media , de acordo com os valores oferecidos é igual a ${media}`)
+    </script>
+</body>
+</html>
