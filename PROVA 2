@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 2</title>
+</head>
+<body>
+    <script>
+        let nome = prompt("Digite o seu nome: ")
+
+        let altura = parseFloat(prompt("Digite a sua altura em cm: "))
+
+        let peso = parseFloat(prompt("Digite o seu peso: "))
+
+        altura = altura / 100
+
+        let IMC = peso / (altura * altura)
+
+        if(IMC < 16){
+            console.log(`${nome} possui IMC com valor ${IMC} , sua classificação no índice é : Baixo peso muito grave`)
+        }
+
+        else if(IMC >= 16 && IMC < 16.99){
+            console.log(`${nome} possui IMC com valor ${IMC} , sua classificação no índice é : Baixo peso grave`)
+        }
+
+        else if(IMC >= 17 && IMC < 18.49){
+            console.log(`${nome} possui IMC com valor ${IMC} , sua classificação no índice é : Baixo peso`)
+        }
+
+        else if(IMC >= 18.50 && IMC < 24.99){
+            console.log(`${nome} possui IMC com valor ${IMC} , sua classificação no índice é : Peso normal`)
+        }
+
+        else if(IMC >= 25 && IMC < 29.99){
+            console.log(`${nome} possui IMC com valor ${IMC} , sua classificação no índice é : Sobrepeso`)
+        }
+
+        else if(IMC >= 30 && IMC < 34.99){
+            console.log(`${nome} possui IMC com valor ${IMC} , sua classificação no índice é : Obesidade grau 1`)
+        }
+
+        else if(IMC >= 35 && IMC < 39.99){
+            console.log(`${nome} possui IMC com valor ${IMC} , sua classificação no índice é : Obesidade grau 2`)
+        }
+
+        else if(IMC >= 40 ){
+            console.log(`${nome} possui IMC com valor ${IMC} , sua classificação no índice é : Obesidade grau 3`)
+        }
+
+        else{
+            console.log("IMC inválido")
+        }
+        
+    </script>
+</body>
+</html>
