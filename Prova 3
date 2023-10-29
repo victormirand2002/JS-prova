@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        soma = 0
+        aluno = 1
+        maior_nota = 0
+        menor_nota = 111
+        num_estudantes = Number(prompt("Digite a quantidade total de estudantes da turma: "))
+
+        while(aluno <= num_estudantes){
+                nota_aluno = Number(prompt(`Digite a nota do aluno N°${aluno} , de 0 a 10: `))
+                
+                if(nota_aluno>maior_nota){
+                maior_nota = nota_aluno
+                }
+                
+                if (nota_aluno<menor_nota){
+                    menor_nota = nota_aluno
+                }
+                aluno++
+                soma += nota_aluno
+        }
+        media = soma/num_estudantes
+
+            console.log(`A media total da sala é ${media}`)
+
+            console.log(`A menor nota obtida na turme é ${menor_nota}`)
+
+            console.log(`A maior nota obtida na turme é ${maior_nota}`)
+            
+
+            
+
+    </script>
+</body>
+</html>
