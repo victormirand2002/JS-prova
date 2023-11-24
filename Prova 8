@@ -33,8 +33,8 @@
 
     <script>
         document.getElementById("btn").addEventListener("click", function () {
-            let distancia = document.getElementById("distancia").value;
-            let valorConvertido = document.getElementById("valorConvertido");
+            let distancia = document.getElementById("distancia").value
+            let valorConvertido = document.getElementById("valorConvertido")
 
             if (unidadesMetricas.value === "Jarda") {
                 valorConvertido.innerHTML = `O valor convertido é de ${distancia * 1094} jardas `
@@ -48,7 +48,7 @@
             else if (unidadesMetricas.value === "Milha") {
                 valorConvertido.innerHTML = `O valor convertido é de ${distancia * 0.000621} milhas `
             }
-        });
+        })
     </script>
 </body>
 </html>
