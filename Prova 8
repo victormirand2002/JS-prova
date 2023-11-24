@@ -49,7 +49,7 @@
             else if (unidadesMetricas.value === "Milha") {
                 valorConvertido.innerHTML = `O valor convertido é de ${(distancia * 0.000621).toString().replace(".", ",")} milhas `
             }
-        })
+        });
     </script>
 </body>
 </html>
