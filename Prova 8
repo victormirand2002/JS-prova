@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            border: 1px solid;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Conversor de unidades</h1>
+
+        <label for="distancia">Distância (m)</label>
+        <input type="text" id="distancia" name="distancia">
+
+        <select id="unidadesMetricas">
+            <option value="Jarda">Jarda</option>
+            <option value="Pé">Pé</option>
+            <option value="Polegada">Polegada</option>
+            <option value="Milha">Milha</option>
+        </select>
+
+        <button id="btn">Converter</button>
+
+        <p id="valorConvertido"></p>
+    </form>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            let distancia = document.getElementById("distancia").value;
+            let valorConvertido = document.getElementById("valorConvertido");
+
+            if (unidadesMetricas.value === "Jarda") {
+                valorConvertido.innerHTML = `O valor convertido é de ${distancia * 1094} jardas `
+            } 
+            else if (unidadesMetricas.value === "Pé") {
+                valorConvertido.innerHTML = `O valor convertido é de ${distancia * 3281} pés `
+            } 
+            else if (unidadesMetricas.value === "Polegada") {
+                valorConvertido.innerHTML = `O valor convertido é de ${distancia * 39.3} polegadas `
+            } 
+            else if (unidadesMetricas.value === "Milha") {
+                valorConvertido.innerHTML = `O valor convertido é de ${distancia * 0.000621} milhas `
+            }
+        });
+    </script>
+</body>
+</html>
